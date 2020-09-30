@@ -1,6 +1,6 @@
 function initPage() {
     var container = $('#fullpage');
-    for(var i=1; i<=13; i++) {
+    for(var i=1; i<=18; i++) {
         var section = $('<div>').addClass('section full-image').css('background-image', `url("images/wedding/${i}.jpg")`);
         container.append(section);
     }
