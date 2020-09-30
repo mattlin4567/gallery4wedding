@@ -6,7 +6,8 @@
 
 .foreground {
   position: absolute;
-  top: 20vh;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .foreground > img {
@@ -35,35 +36,36 @@
 /* arrow animation */
 .arrows {
   position: absolute;
-  bottom: 10px;
+  bottom: 50px;
   left: 50%;
   width: 50px;
   height: 50px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .fadeinUp {
   -webkit-animation: 1s ease-in-out 500ms infinite alternate fadeInUp;
   animation: 1s ease-in-out 500ms infinite alternate fadeInUp;
-  
 }
 
 @keyframes fadeInUp {
   0% {
       opacity: 0;
+      transform: translate(-50%, 20px);
   }
   100% {
       opacity: 1;
+      transform: translate(-50%, 5px);
   }
 }
 
 @-webkit-keyframes fadeInUp {
   0% {
       opacity: 0;
-      -webkit-transform: translateY(40px);
+      -webkit-transform: translate(-50%, 20px);
   }
   100% {
       opacity: 1;
-      -webkit-transform: translateY(0);
+      -webkit-transform: translate(-50%, 5px);
   }
 }
